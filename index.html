@@ -2,55 +2,125 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>내 생에 첫 쇼핑몰</title>
+  <title>선우의 홈페이지</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f8f8f8;
       margin: 0;
       padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #d7e1ec, #f0f4f8);
+      color: #333;
     }
+
     header {
-      background-color: #333;
+      background-color: #4a90e2;
       color: white;
-      padding: 20px;
+      padding: 60px 0;
+      text-align: center;
     }
-    nav a {
+
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #f1f1f1;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .buttons a {
+      display: inline-block;
       margin: 10px;
+      padding: 12px 20px;
+      background-color: #4a90e2;
       color: white;
       text-decoration: none;
-    }
-    .buttons a button {
-      padding: 10px 20px;
-      border: none;
       border-radius: 5px;
-      color: white;
-      cursor: pointer;
-      margin: 10px;
+      transition: background-color 0.3s;
     }
-    .hate { background-color: red; }
-    .love { background-color: pink; }
-    .like { background-color: lightblue; }
+
+    .buttons a:hover {
+      background-color: #357abd;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>내 생에 첫 쇼핑몰</h1>
-  <nav>
-    <a href="index.html">홈</a>
-    <a href="products.html">상품목록</a>
-    <a href="cart.html">장바구니</a>
-    <a href="checkout.html">결제</a>
-  </nav>
+  <h1>안녕하세요, 저는 선우입니다!</h1>
+  <p>세상을 따뜻하게 바꾸고 싶은 개발자 지망생</p>
 </header>
 
-<section class="buttons">
-  <a href="hate.html"><button class="hate">I Hate</button></a>
-  <a href="love.html"><button class="love">I Love</button></a>
-  <a href="like.html"><button class="like">I Like</button></a>
-</section>
+<div class="container">
+  <div class="section">
+    <h2>👤 자기소개</h2>
+    <p>
+      저는 사람과 기술, 운동을 사랑하는 대학생입니다. <br>
+      현재 사회학과와 스포츠과학을 전공하고 있으며, 트레이너라는 꿈을 향해 노력 중입니다. <br>
+      웹 개발과 디자인에도 흥미가 있어서 이렇게 저를 소개하는 홈페이지를 만들고 있어요.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>💼 내가 잘하는 것들</h2>
+    <p>
+      - HTML/CSS 기초<br>
+      - 파워포인트 및 발표<br>
+      - 사람들과 소통하기<br>
+      - 운동 지도와 체력 트레이닝
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>🎯 나의 목표</h2>
+    <p>
+      - 좋은 트레이너가 되어 많은 사람들의 건강을 책임지는 것<br>
+      - 다양한 분야를 융합하는 창의적인 전문가가 되기<br>
+      - 나만의 운동 브랜드 만들기
+    </p>
+  </div>
+
+  <div class="section buttons">
+    <a href="mailto:youremail@example.com">📧 이메일 보내기</a>
+    <a href="https://github.com/yourgithubid" target="_blank">🐱 GitHub 보기</a>
+    <a href="like.html">❤️ 좋아하는 것들</a>
+  </div>
+</div>
+
+<footer>
+  © 2025 Sunwoo. All rights reserved.
+</footer>
 
 </body>
 </html>
