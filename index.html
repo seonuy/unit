@@ -1,126 +1,28 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>선우의 홈페이지</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #d7e1ec, #f0f4f8);
-      color: #333;
-    }
-
-    header {
-      background-color: #4a90e2;
-      color: white;
-      padding: 60px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 48px;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 20px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #4a90e2;
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
-    .section p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background-color: #f1f1f1;
-      color: #666;
-      font-size: 14px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background-color: #4a90e2;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .buttons a:hover {
-      background-color: #357abd;
-    }
+    body { background: #fff; color: #111; font-family: sans-serif; margin:0; }
+    header { height: 80vh; background: url('hero.jpg') center/cover no-repeat; position: relative; }
+    header h1 { position: absolute; bottom: 20%; left: 10%; color: #fff; font-size: 3rem; }
+    .cards { display: flex; gap:20px; padding:40px; }
+    .card { background:#f8f8f8; border-radius:8px; overflow:hidden; flex:1; transition: transform .3s; }
+    .card:hover { transform: translateY(-10px); }
+    .card img { width:100%; }
+    .card p { padding: 20px; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>안녕하세요, 저는 선우입니다!</h1>
-  <p>세상을 따뜻하게 바꾸고 싶은 개발자 지망생</p>
+  <h1>Just Do You</h1>
 </header>
 
-<div class="container">
-  <div class="section">
-    <h2>👤 자기소개</h2>
-    <p>
-      저는 사람과 기술, 운동을 사랑하는 대학생입니다. <br>
-      현재 사회학과와 스포츠과학을 전공하고 있으며, 트레이너라는 꿈을 향해 노력 중입니다. <br>
-      웹 개발과 디자인에도 흥미가 있어서 이렇게 저를 소개하는 홈페이지를 만들고 있어요.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>💼 내가 잘하는 것들</h2>
-    <p>
-      - HTML/CSS 기초<br>
-      - 파워포인트 및 발표<br>
-      - 사람들과 소통하기<br>
-      - 운동 지도와 체력 트레이닝
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>🎯 나의 목표</h2>
-    <p>
-      - 좋은 트레이너가 되어 많은 사람들의 건강을 책임지는 것<br>
-      - 다양한 분야를 융합하는 창의적인 전문가가 되기<br>
-      - 나만의 운동 브랜드 만들기
-    </p>
-  </div>
-
-  <div class="section buttons">
-    <a href="mailto:youremail@example.com">📧 이메일 보내기</a>
-    <a href="https://github.com/yourgithubid" target="_blank">🐱 GitHub 보기</a>
-    <a href="like.html">❤️ 좋아하는 것들</a>
-  </div>
-</div>
-
-<footer>
-  © 2025 Sunwoo. All rights reserved.
-</footer>
+<section class="cards">
+  <div class="card"><img src="self1.jpg"><p>About Me</p></div>
+  <div class="card"><img src="project1.jpg"><p>Project 1</p></div>
+  <div class="card"><img src="project2.jpg"><p>Project 2</p></div>
+</section>
 
 </body>
 </html>
